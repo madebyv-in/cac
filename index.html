@@ -1,11 +1,37 @@
 <!DOCTYPE html>
+<!-- Generate a menu with 3 items: For You, Take Action, Get Help -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Menu Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="#you">You</a>
+        <a href="#take-action">Take Action</a>
+        <a href="#get-help">Get Help</a>
+    </nav>
 </body>
 </html>
+<!-- End of file -->
