@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Welcome back!", "message": "Check out your new dashboard features." },
+  { "id": 2, "title": "Project Reminder", "message": "Sign up for city council meeting alerts." },
+  { "id": 3, "title": "Tips & Tricks", "message": "Get summaries of critical meetings." }
+]
