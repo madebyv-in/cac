@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voice Recorder</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    nav { background-color:#333; color:#fff; padding:1rem; }
+    nav a { color:#fff; text-decoration:none; padding:0.5rem 1rem; }
+    nav a:hover { background-color:#555; }
+    main { max-width:800px; margin:1rem auto; padding:0 1rem; }
+    .recorder { display:flex; flex-direction:column; gap:0.75rem; }
+    button#recordBtn { padding:0.75rem 1rem; font-size:1rem; border-radius:6px; border:1px solid #666; background:#f2f2f2; cursor:pointer; }
+    button#recordBtn.recording { background:#e74c3c; color:#fff; border-color:#c0392b; }
+    textarea#transcript { width:100%; min-height:150px; padding:0.75rem; border:1px solid #ddd; border-radius:6px; resize:vertical; }
+    .muted { color:#666; font-size:0.95rem; }
+  </style>
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <h2>Voice Recorder</h2>
+    <section class="recorder">
+      <p class="muted">Press the button to start/stop voice transcription. Uses your browser's SpeechRecognition (Web Speech API).</p>
+      <button id="recordBtn" type="button">Start Recording</button>
+      <label for="transcript">Transcription</label>
+      <textarea id="transcript" placeholder="Transcription will appear here..." readonly></textarea>
+      <p id="status" class="muted" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="nav-loader.js"></script>
+  <script src="voice-recorder.js"></script>
+</body>
+</html>
